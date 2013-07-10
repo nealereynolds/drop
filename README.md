@@ -112,6 +112,6 @@ To avoid a messy overlap of CSS & JS write set hooks for JS either ID's or Class
 .js-
 `````
 
-### This is a fluid document that will be updated as I go.
+### *This is a fluid document that will be updated as I go.*
 
 
