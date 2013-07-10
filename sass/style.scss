@@ -1,5 +1,19 @@
 /*------------------------------------*\
     $STYLES
+
+	@author: 	Neale Reynolds
+	@twitter:	@nealereynolds
+	@url:		nealereynolds.co.uk
+
+	-----------------------------------
+
+	Credit ust be given to the following
+
+	Harry Roberts @csswizadry for his CSS Guidelines and inuit [@inuit]
+	Stu Robosn @sturobson for his a-slightly-bizarre-starting-point
+
+	Both authors have influenced the creation of a number of sections in this setup
+
 \*------------------------------------*/
 
 /*
@@ -12,7 +26,7 @@
  *	3.	Objects and abstractions
  *	4.	Style trumps
  *	
-*/
+ */
 
 
 /*
@@ -24,7 +38,8 @@
 @import "generic/normalize";
 @import "generic/reset";
 @import "generic/clearfix";
-@import "generic/helper";
+
+
 
 /*
  * Base Styles: unclasses HTML elements
@@ -41,11 +56,26 @@
 @import "base/tables";
 @import "base/typography";
 
+
+
 /*
  * Objects & abstractions
 */
+
+@import "objects/block-lists";
+@import "objects/breadcrumbs";
+@import "objects/buttons";
+@import "objects/grids";
+@import "objects/icon-text";
+@import "objects/media";
+@import "objects/nav";
+
 
 
 /*
  * Style trumps
 */
+
+@import "generic/helper";
+
+
