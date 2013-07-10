@@ -1,5 +1,4 @@
 # drop
-====
 
 ## Drop the base, base html &amp; sass
 
@@ -24,8 +23,10 @@ Nesting elements can get messy so I like to comment off my elements with HTML co
 
 If there are load of classes on a HTML element then simply chain the closing comments as followed:
 
+`````css
 <div class="class second third">
 </div><!-- //.class //.second //.third -->
+`````
 
 **This can obviously become as confusing as no comments at all if overused so use sparingly.**
 
@@ -41,44 +42,56 @@ Place a file heading comment denoting the name of the file as a quick reference 
 
 E.g.
 
+`````css
 /*------------------------------------*\
     $FILENAME
   * @author:
   * @version:
   * @example: 
 \*------------------------------------*/
+`````
 
 #### Sections
 
 Use comments to break up code sections within a file, as followed:
 
+`````css
 /*------------------------------------*\
     $SECTION
 \*------------------------------------*/
+`````
 
 ### Naming Conventions
 
 ##### Add a space over a property's colon
 
+`````css
 position: relative;
+`````
 
 as opposed to
 
+`````css
 position:relative;
+`````
 
 #### Long Class Names
 
 When you're using a long class name, use hypens to break up the single works e.g.
 
+`````css
 .large-class-name {}
+`````
 
 ##### BEM
 
 I'm currently adopting a BEM naming convention so all classes should follow the principle of:
 
+`````css
 .block {}
 .block__element {}
 .block--modifier {}
+`````
 
 You can read more on this at [B.E.M](http://bem.info/)
 
@@ -94,9 +107,10 @@ To avoid specificity problems, avoid styling off ID's where possible.
 
 To avoid a messy overlap of CSS & JS write set hooks for JS either ID's or Classes.
 
+`````css
 #js-
 .js-
-
+`````
 
 ### This is a fluid document that will be updated as I go.
 
