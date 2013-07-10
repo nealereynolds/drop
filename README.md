@@ -15,8 +15,10 @@ Also as with most frameworks it is a collection of bits and pieces created by my
 
 Nesting elements can get messy so I like to comment off my elements with HTML comments as followed.
 
+`````css
 <div class="class">
 </div><!-- //.class -->
+`````
 
 ### Multiple Classes
 
