@@ -112,3 +112,58 @@
     overflow:hidden;
     text-overflow:ellipsis;
 }
+
+
+
+/**
+ * Media Query Mixin
+ * Modified from Stu Robson's post @ http://alwaystwisted.com/post.php?s=2013-04-01-my-media-query-mixin
+ *
+
+   '@include mediaquery($lap-start, max){}'
+
+ * Would result in:
+
+     @media screen and (max-width: 30.0625em) {
+        .example {
+            width: 100%;
+        }
+    }
+
+ *
+ */
+
+@mixin mediaquery($point, $query1: min, $query2: width) {
+
+  @media screen and (#{$query1}-#{$query2}: $point / $base-font-size +em) {
+      @content;
+  }
+
+}
+
+
+
+/**
+ * Cross browser opacity
+ *
+  @include opacity(0.8);
+ *
+  {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+  }
+ *
+ */
+
+
+
+@mixin opacity($trans) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
+  filter: alpha(opacity=($trans * 100));
+  -moz-opacity: $trans;
+  -khtml-opacity: $trans;
+  opacity: $trans;
+}
