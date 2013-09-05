@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+
+a {
+    color:$brand-color;
+
+    &:hover,
+    &:focus {
+        text-decoration:none;
+        color: darken($brand-color, 15);
+    }
+}

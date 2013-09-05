@@ -15,6 +15,7 @@
     &:before,
     &:after{
         @include vendor(box-sizing, border-box);
+        -webkit-font-smoothing: antialiased;
     }
 }
 
