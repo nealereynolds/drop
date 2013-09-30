@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title></title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Modernizr -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <style>
+    body { padding: 5%;}
+    </style>
+    
+</head>
+
+<body>
+
+
+<form action="#">
+    
+    <fieldset>
+
+        <legend>Personal details</legend>
+        
+        <ul class=form-fields>
+            
+            <li>
+                <label for=first-name>First name</label>
+                <input type=text class=text-input id=first-name>
+            </li>
+            
+            <li>
+                <label for=last-name>Last name</label>
+                <input type=text class=text-input id=last-name>
+            </li>
+            
+            <li>
+                <label for=email>Email</label>
+                <input type=email class=text-input id=email>
+                <small class=extra-help>.edu emails only</small>
+            </li>
+            
+        </ul>
+            
+    </fieldset>
+
+    <fieldset>
+        
+        <legend>Contacting you</legend>
+        
+        <p>We may contact you from time to time&hellip;</p>
+        
+        <ul class=form-fields>
+            
+            <li>
+                <span class=label>How would you like to be contacted?</span>
+                
+                <ul class=check-list>
+                    <li>
+                        <input type=checkbox id=by-email> <label for=by-email>By email</label>
+                    </li>
+                    <li>
+                        <input type=checkbox id=by-post> <label for=by-post>By post</label>
+                    </li>
+                    <li>
+                        <input type=checkbox id=by-pigeon> <label for=by-pigeon>By carrier pigeon</label>
+                    </li>
+                </ul>
+                
+            </li>
+            
+            <li>
+                <span class=label>How often would you like to be contacted?</span>
+                
+                <ul class="check-list  multi-list  two-cols">
+                    <li>
+                        <input type=radio name=frequency id=weekly> <label for=weekly>Weekly</label>
+                    </li>
+                    <li>
+                        <input type=radio name=frequency id=daily> <label for=daily>Daily</label>
+                    </li>
+                </ul>
+                
+            </li>
+
+            <li>
+                <select>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+            </li>
+            
+        </ul>
+        
+    </fieldset>
+    
+</form>
+
+<!-- Js -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
